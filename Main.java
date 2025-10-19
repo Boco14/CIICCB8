@@ -1,7 +1,8 @@
 class print_String{
     String this_string = "Hello world";
+    String another_string = "Hello moon";
     void print_method(){
-        System.out.println(this_string);
+        System.out.println(this_string + "\n" +another_string);
     }
 }
 
