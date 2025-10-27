@@ -1,6 +1,3 @@
-package const_param_package;
-import java.util.Scanner;
-
 class MyClass{
     double Leo, Marc;
 
