@@ -6,7 +6,7 @@
 * @author Leo 
 */
 
-package primitive_data_types;
+package tasks_package;
 
 class DataTypes{
     char _h, _w, _r, _d;
@@ -59,7 +59,7 @@ PROBLEM BREAKDOWN:
     true = boolean,
 */
 
-public class PrimitiveDataTypes{
+public class Task2 {
     public static void main(String[] args) {
         DataTypes dataTypes = new DataTypes('H', 3110, 'w', (byte) 0, 'r', (short) 1, 'd', 2.0f, true);
         dataTypes.concatinate();
