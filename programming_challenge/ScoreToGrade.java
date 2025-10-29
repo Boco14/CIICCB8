@@ -1,0 +1,44 @@
+package programming_challenge;
+import java.util.Scanner;
+
+class Grade{
+    int input_grade;
+
+    Grade(int i){
+        this.input_grade = i;
+    }
+    
+    void method_grade(){
+        if (input_grade >= 90 && input_grade <= 100){
+            System.out.println("Student grade: A");
+        }else if (input_grade >= 80 && input_grade <= 89){
+            System.out.println("Student grade: B");
+        }else if (input_grade >= 70 && input_grade <= 79){
+            System.out.println("Student grade: C");
+        }else if (input_grade >= 60 && input_grade <= 69){
+            System.out.println("Student grade: D");
+        }else{
+            System.out.println("Student grade: Failed");
+        }
+    }
+}
+
+public class ScoreToGrade {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int grade_;
+        char repeat = 'Y';
+        
+        while(repeat == 'Y' || repeat == 'y'){
+            System.out.print("Enter grade: ");
+            grade_ = scan.nextInt();
+            Grade object_grade = new Grade(grade_);
+            object_grade.method_grade();
+
+            System.out.print("Enter another grade(Y/N)?");
+            repeat = scan.next().charAt(0);
+            if((repeat == 'n' || repeat == 'N'))break;
+        }
+        scan.close();
+    }
+}
