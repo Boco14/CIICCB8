@@ -4,7 +4,6 @@
 * H3110 w0r1d 2.0 true
 *
 * @author Leo 
-* @codespace links: https://github.com/Boco14/CIICCB8/blob/main/const_param_package/primitive_data_types/PrimitiveDataTypes.java
 */
 
 package primitive_data_types;
