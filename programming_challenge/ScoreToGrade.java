@@ -1,3 +1,15 @@
+/**
+ * Score to Grade F - A
+ * Write a program that takes in the score of a student in a test and outputs their grade based on the following criteria:
+ * A score of 90 or above gets an A grade
+ * A score between 80 and 89 gets a B grade
+ * A score between 70 and 79 gets a C grade
+ * A score between 60 and 69 gets a D grade
+ * A score below 60 gets an F grade
+ *
+ * @author Leo
+ */
+
 package programming_challenge;
 import java.util.Scanner;
 
