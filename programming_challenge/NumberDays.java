@@ -13,7 +13,7 @@
 
 package programming_challenge;
 import java.util.Scanner;
-import java.time.YearMonth;
+
 
 class Month{
     /**
@@ -21,40 +21,33 @@ class Month{
      * 4, 6, 9, 11 - 30 days
      * 2 - 28/29 days on leap year
      * 
-     * @param year 2025(final) and month(user)
+     * @param year 2025 and month
      * @return days of the month selected
-     * */ 
-    final int year = 2025;
-    final int month;
+     * */
+
+    int month;
 
     Month(int m){
         this.month = m;
     }
 
     void numberOfDays(){
-        YearMonth yearMonth = YearMonth.of(year, month);
-        int daysOfMonth = yearMonth.lengthOfMonth();
-        
         switch (month){
-            default:
-                System.out.println("Not in the calendar");
-                break;
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+            System.out.println("Month of " + " 31 days");
+            break;
 
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            case 10:
-            case 11:
-            case 12: 
-                System.out.println("Month of " + yearMonth.getMonth().toString().toLowerCase() + " " + daysOfMonth);
-                break;
-        }
+        case 4: case 6: case 9: case 11:
+            System.out.println("Month of " + " 30 days");
+            break;
+
+        case 2:
+            System.out.println("Month of " + " 28 days");
+            break;
+
+        default:
+            System.out.println("Not in the calendar");
+            break;
     }
 }
 
@@ -86,18 +79,24 @@ public class NumberDays{
     public static void main(String[] args) {
         // Create Scanner object in memory
         Scanner scan = new Scanner(System.in);
+        char repeat = 'y';
 
         // Display month options(Optional)
-        DisplayMonth displayObject = new DisplayMonth();
-        displayObject.printMonth();
+        /* DisplayMonth displayObject = new DisplayMonth();
+        displayObject.printMonth(); */
 
-        // Accepts user input( number of months )
-        System.out.print("Enter number of month: ");
-        int monthInput = scan.nextInt();
-
-        Month monthObject = new Month(monthInput);
-        monthObject.numberOfDays();
+        while (repeat == 'y' || repeat == 'Y') {
+            // Accepts user input( number of months )
+            System.out.print("Enter number of month: ");
+            int monthInput = scan.nextInt();
+    
+            Month monthObject = new Month(monthInput);
+            monthObject.numberOfDays();
+            
+            System.out.println("Continue? y/n:");
+            if((repeat == 'n' || repeat == 'N'))break;
+        }
 
         scan.close();
     }
-}
+}}
