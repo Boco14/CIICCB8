@@ -65,7 +65,7 @@ public class NumberDays{
         // Create Scanner object in memory
         Scanner scan = new Scanner(System.in);
 
-        // Display month options
+        // Display month options(Optional)
         DisplayMonth displayObject = new DisplayMonth();
         displayObject.printMonth();
 
