@@ -6,7 +6,7 @@ class NumberDaysMonthInput {
      * 4, 6, 9, 11 - 30 days
      * 2 - 28/29 days on leap year
      * 
-     * @param month
+     * @param month = m
      * @return days of the month selected
      * */
 
@@ -35,7 +35,6 @@ class NumberDaysMonthInput {
 
             default:
                 System.out.println("Not in the calendar");
-                break;
         }
     }
 }
