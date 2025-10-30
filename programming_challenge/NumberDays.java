@@ -93,7 +93,9 @@ public class NumberDays{
             Month monthObject = new Month(monthInput);
             monthObject.numberOfDays();
             
-            System.out.println("Continue? y/n:");
+            System.out.print("Continue? y/n: ");
+            char continueInput = scan.next().charAt(0);
+            repeat = continueInput;
             if((repeat == 'n' || repeat == 'N'))break;
         }
 
