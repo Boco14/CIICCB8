@@ -1,13 +1,7 @@
-/**
- * Sum of All integer Inputs
- *
- * @author leo
- * */
-package programming_challenge;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SumOfInteger {
+public class EnhancedForLoop {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> arrayList= new ArrayList<>();

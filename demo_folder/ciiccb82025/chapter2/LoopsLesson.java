@@ -1,4 +1,4 @@
-package chapter2;
+package demo_folder.ciiccb82025.chapter2;
 
 import java.util.Scanner;
 
