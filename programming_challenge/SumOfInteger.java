@@ -40,5 +40,6 @@ public class SumOfInteger {
                     break;
                 }
         }
+        scan.close();
     }
 }
