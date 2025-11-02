@@ -1,6 +1,5 @@
 /**
  * Combine the Java arithmetic operators with the simple assignment operator
- *
  * Performance Objective: Given a java file ArithmeticTask.java, you should be able to
  * create the ource code of a java executable application,
  * and compile it to run in a java virtual machine without errors following
