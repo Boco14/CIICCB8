@@ -1,10 +1,11 @@
 /** 
-* Create all of the primitives (except long and double) with different values. 
-* Concatenate them into a string and  print it to the screen so it will print: 
-* H3110 w0r1d 2.0 true
-*
-* @author Leo 
-*/
+ * Task 2:
+ * Create all of the primitives (except long and double) with different values.
+ * Concatenate them into a string and  print it to the screen so it will print:
+ * H3110 w0r1d 2.0 true
+ *
+ * @author Leo
+ * */
 
 package tasks_package;
 

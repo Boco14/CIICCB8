@@ -7,7 +7,7 @@ It includes Java programs, practice activities, and Git/GitHub workflow document
 ---
 
 ## 📁 Repository Contents
-- 📝 **Basic Java Programs** — syntax, variables, loops, and conditionals  
+- 📝 **Basic Java Programs** — syntax, variables, my_activities.constructors.loops, and conditionals  
 - 💻 **Object-Oriented Programming (OOP)** — classes, objects, constructors, methods  
 - ⚙️ **TESDA NC III Activities** — competency-based programming exercises  
 - 🧠 **Git & GitHub Commands** — version control guide for Codespace and local repositories  

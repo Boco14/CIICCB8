@@ -1,3 +1,5 @@
+package my_activities.constructors;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -22,7 +24,7 @@ public class EnhancedForLoop {
             // Repeat action
                 // Initialize repeat
                 char repeat = 'y';
-                System.out.print("Add another number (y/n)?: ");
+                System.out.print("Add another my_activities.constructors.number (y/n)?: ");
                 repeat = scan.next().charAt(0);
 
                 System.out.println();

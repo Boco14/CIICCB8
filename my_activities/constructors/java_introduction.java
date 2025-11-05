@@ -1,4 +1,4 @@
-/*
+package my_activities.constructors;/*
 OBJECT-ORIENTED PROGRAMMING (OOP)
 is a programming paradigm based on the concept of "objects", 
 which can contain data and code: data in the form of fields (often known as attributes or properties), 
@@ -9,7 +9,7 @@ they are associated (objects have a notion of "this" or "self").
 import java.util.Scanner;
 
 class number{
-    //These lines are properties/attributes of the object number
+    //These lines are properties/attributes of the object my_activities.constructors.number
     int first_number, second_number;
 
     //This line is a method the action/behavior that the object does.
@@ -34,7 +34,7 @@ class number{
             System.out.println(first_number + " / " + second_number + " = " + qoutient);
         }
         else{
-            System.out.println("Second number is not devisible by zero");
+            System.out.println("Second my_activities.constructors.number is not devisible by zero");
         }
     }
 }
@@ -48,11 +48,11 @@ public class java_introduction{
         //This line creates an object num1
         while (choice != 'n' || choice != 'N') {
             //This line sets properties of the object num1
-            System.out.print("Enter first number: ");
+            System.out.print("Enter first my_activities.constructors.number: ");
             num1.first_number = sc.nextInt();
 
             //This line sets properties of the object num2
-            System.out.print("Enter second number: ");
+            System.out.print("Enter second my_activities.constructors.number: ");
             num1.second_number = sc.nextInt();
             
             System.out.println("Select and operator: +, -, *, /");

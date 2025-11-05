@@ -1,4 +1,4 @@
-package const_param1;
+package my_activities.constructors.const_param1;
 import java.util.Scanner;
 
 class SimpleMathClass{

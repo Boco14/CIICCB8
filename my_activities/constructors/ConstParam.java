@@ -1,3 +1,5 @@
+package my_activities.constructors;
+
 class MyClass{
     double Leo, Marc;
 

@@ -1,3 +1,5 @@
+package my_activities.constructors;
+
 import java.util.Scanner;
 
 class if_class{

@@ -7,7 +7,7 @@
 * @codespace links: https://github.com/Boco14/CIICCB8/blob/main/const_param_package/primitive_data_types/PrimitiveDataTypes.java
 */
 
-package primitive_data_types;
+package my_activities.constructors.primitive_data_types;
 
 class DataTypes{
     char _h, _w, _r, _d;

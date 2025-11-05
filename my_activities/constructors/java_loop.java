@@ -1,3 +1,5 @@
+package my_activities.constructors;
+
 import java.util.Scanner;
 
 class loops{
@@ -38,7 +40,7 @@ class loops{
         for(int numbers_sum = 1; numbers_sum <= 100; numbers_sum++){
             addend = addend + numbers_sum;
         }
-        System.out.println("The total number is " + addend);
+        System.out.println("The total my_activities.constructors.number is " + addend);
 
 //        6. Print a  square of stars  like this (for `n = 5`):
 //        *****
@@ -68,7 +70,7 @@ class loops{
         }
     }
     void level_three(){
-//        8. Write a program to find the  factorial  of a number (e.g., `5! = 5×4×3×2×1 = 120`).
+//        8. Write a program to find the  factorial  of a my_activities.constructors.number (e.g., `5! = 5×4×3×2×1 = 120`).
         System.out.print("5! = = 5×4×3×2×1 = ");
         int factorial = 1;
         for(int y = 5; y >= 1; y--){
@@ -79,7 +81,7 @@ class loops{
 
 //         9. Print the  Fibonacci sequence  up to 10 terms: 
 //         0 1 1 2 3 5 8 13 21 34
-        int n = 10; // number of terms
+        int n = 10; // my_activities.constructors.number of terms
         int first = 0, second = 1; // first two numbers
 
         System.out.print("Fibonacci up to " + n + " terms: ");
