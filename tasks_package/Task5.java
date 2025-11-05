@@ -22,7 +22,6 @@ public class Task5 {
             System.out.print("index of " + x + ": ");
             int input = scan.nextInt();
 
-            // adding arrayList elements
             arrayList.add(input);
         }
 
@@ -34,7 +33,7 @@ public class Task5 {
         System.out.println();
 
         // checks if all numbers are equal
-        if(arrayList.get(0) == arrayList.get(1) && arrayList.get(1) == arrayList.get(2) && arrayList.get(0) == arrayList.get(2)){
+        if(arrayList.get(0) == arrayList.get(1) && arrayList.get(0) == arrayList.get(2) && arrayList.get(1) == arrayList.get(2)){
             System.out.println("All numbers are equal");
         }else{
             if(arrayList.get(0) > arrayList.get(1) && arrayList.get(0) > arrayList.get(2))// checks if 0 > 1 and if 0 > 2
