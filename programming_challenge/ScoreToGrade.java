@@ -39,17 +39,21 @@ public class ScoreToGrade {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int grade;
-        char repeat = 'Y';
         
-        while(repeat == 'Y' || repeat == 'y'){
+        while(true){
             System.out.print("Enter grade: ");
             grade = scan.nextInt();
             Grade objectGrade = new Grade(grade);
             objectGrade.method_grade();
 
             System.out.print("Enter another grade(Y/N)?");
-            repeat = scan.next().charAt(0);
-            if((repeat == 'n' || repeat == 'N'))break;
+            String repeat = scan.next();
+
+            System.out.println();
+
+            if(repeat.equalsIgnoreCase("y"))continue;
+            else { break; }
+
         }
         scan.close();
     }
