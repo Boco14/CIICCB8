@@ -15,8 +15,8 @@ package programming_challenge.number_days;
 
 public class Main{
     public static void main(String[] args) {
-        // Create Scanner object in memory
-    NumberDays repeat = new NumberDays();
-    repeat.repeatPrompt();
+
+        NumberDays repeat = new NumberDays();
+        repeat.enterMonth();
     }
 }

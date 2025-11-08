@@ -2,7 +2,7 @@ package programming_challenge.number_days;
 import java.util.Scanner;
 
 class NumberDays {
-    void repeatPrompt(){
+    void enterMonth(){
         Scanner scan = new Scanner(System.in);
         
         System.out.print("Enter number of month: ");

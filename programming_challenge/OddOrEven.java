@@ -54,9 +54,8 @@ class NumberClassifier{
 public class OddOrEven {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        char repeat = 'y';
-        
-        while (repeat == 'y' || repeat == 'Y'){
+
+        while(true){
             System.out.print("Enter number: ");
             int number = scan.nextInt();
             System.out.println();
@@ -66,12 +65,10 @@ public class OddOrEven {
             
             System.out.println();
             System.out.print("Enter another number(y/n)?: ");
-            repeat = scan.next().charAt(0);
+            String repeat = scan.next();
 
-            if (repeat == 'y' || repeat == 'Y'){
+            if (repeat.equalsIgnoreCase("y")){
                 continue;
-            }else if(repeat == 'n' || repeat == 'N'){
-                break;
             }else{
                 break;
             }

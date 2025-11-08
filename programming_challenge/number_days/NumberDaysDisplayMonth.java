@@ -25,7 +25,6 @@ class NumberDaysDisplayMonth {
     }
 
     void printMonth(){
-        // System.out.println("OPTIONS");
         System.out.print("Month of " + monthArray[_index - 1]);
 
         YearMonth yearMonth = YearMonth.of(year, _index);

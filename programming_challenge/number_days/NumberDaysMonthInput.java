@@ -19,22 +19,22 @@ class NumberDaysMonthInput {
         void numberOfDays(){
             switch (month){
                 case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-                NumberDaysDisplayMonth displayObject1 = new NumberDaysDisplayMonth(month);
-                displayObject1.printMonth();
-                break;
+                    NumberDaysDisplayMonth displayObject1 = new NumberDaysDisplayMonth(month);
+                    displayObject1.printMonth();
+                    break;
                 
-            case 4: case 6: case 9: case 11:
-                NumberDaysDisplayMonth displayObject2 = new NumberDaysDisplayMonth(month);
-                displayObject2.printMonth();
-                break;
+                case 4: case 6: case 9: case 11:
+                    NumberDaysDisplayMonth displayObject2 = new NumberDaysDisplayMonth(month);
+                    displayObject2.printMonth();
+                    break;
 
-            case 2:
-                NumberDaysDisplayMonth displayObject3 = new NumberDaysDisplayMonth(month);
-                displayObject3.printMonth();
-                break;
+                case 2:
+                    NumberDaysDisplayMonth displayObject3 = new NumberDaysDisplayMonth(month);
+                    displayObject3.printMonth();
+                    break;
 
-            default:
-                System.out.println("Not in the calendar");
+                default:
+                    System.out.println("Not in the calendar");
         }
     }
 }

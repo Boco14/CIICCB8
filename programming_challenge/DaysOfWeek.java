@@ -20,6 +20,7 @@ import java.util.Scanner;
 
 class WeekDays {
     int selectDay;
+
     String[] daysOfWeek = {
         "Monday",
         "Tuesday",
