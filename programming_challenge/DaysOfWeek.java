@@ -36,7 +36,7 @@ class WeekDays {
     }
     /**
      * @param sday
-     * @return selected day
+     * selected day
      */
     void displayDay(){
         if(selectDay < 1 || selectDay > 7){

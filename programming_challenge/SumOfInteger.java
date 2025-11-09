@@ -26,20 +26,14 @@ public class SumOfInteger {
                 sum += x;
             }
             // Repeat action
-                // Initialize repeat
-                char repeat = 'y';
                 System.out.print("Add another number (y/n)?: ");
-                repeat = scan.next().charAt(0);
+                String repeat = scan.next();
 
                 System.out.println();
+                scan.close();
 
-                if(repeat == 'y' || repeat == 'Y'){
-                    continue;
-                }else{
-                    System.out.println("Total value: " + sum);
-                    break;
-                }
+                if(repeat.equalsIgnoreCase("y"))continue;
+                else break;
         }
-        scan.close();
     }
 }

@@ -67,13 +67,10 @@ public class OddOrEven {
             System.out.print("Enter another number(y/n)?: ");
             String repeat = scan.next();
 
-            if (repeat.equalsIgnoreCase("y")){
-                continue;
-            }else{
-                break;
-            }
-
-        }
         scan.close();
+
+            if (repeat.equalsIgnoreCase("y"))continue;
+            else break;
+        }
     }
 }
