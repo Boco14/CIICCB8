@@ -30,10 +30,10 @@ public class SumOfInteger {
                 String repeat = scan.next();
 
                 System.out.println();
-                scan.close();
 
                 if(repeat.equalsIgnoreCase("y"))continue;
                 else break;
         }
+                scan.close();
     }
 }
