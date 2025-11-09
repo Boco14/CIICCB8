@@ -12,7 +12,8 @@ class VowelConsonantsClass{
         if(input.equalsIgnoreCase("a") ||
                 input.equalsIgnoreCase("e") ||
                 input.equalsIgnoreCase("i") ||
-                input.equalsIgnoreCase("o") || input.equalsIgnoreCase("u"))
+                input.equalsIgnoreCase("o") ||
+                input.equalsIgnoreCase("u"))
             System.out.println("Your input is a VOWEL");
         else
             System.out.println("Your input is a CONSONANT");;
