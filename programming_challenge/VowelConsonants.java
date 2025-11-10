@@ -1,3 +1,9 @@
+/**
+ * Check vowels and consonants
+ *
+ * @author leo
+ * */
+
 package programming_challenge;
 import java.util.Scanner;
 
@@ -37,8 +43,10 @@ public class VowelConsonants {
             repeat = scan.next();
             System.out.println();
 
-            if(repeat.equalsIgnoreCase("y"))continue;
-            else break;
+            if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
+                System.out.println("----- Program Terminated -----");
+                break;
+            }
         }
             scan.close();
     }

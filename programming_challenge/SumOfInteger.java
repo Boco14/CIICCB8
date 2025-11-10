@@ -31,8 +31,12 @@ public class SumOfInteger {
 
                 System.out.println();
 
-                if(repeat.equalsIgnoreCase("y"))continue;
-                else break;
+                if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
+                    System.out.println("Input: " + arrayList);
+                    System.out.println("Sum of All integer Inputs is " + sum);
+                    System.out.println("----- Program Terminated -----");
+                    break;
+                }
         }
                 scan.close();
     }

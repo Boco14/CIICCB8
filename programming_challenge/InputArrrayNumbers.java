@@ -1,0 +1,38 @@
+/**
+ * Sum and average of input array numbers
+ *
+ * @author leo
+ * */
+
+package programming_challenge;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class InputArrrayNumbers {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        while(true){
+            System.out.print("Enter number: ");
+            int input = scan.nextInt();
+            arrayList.add(input);
+
+            int sum = 0;
+            for(int x : arrayList){
+                sum += x;
+            }
+            System.out.print("Add more number(y/n)? ");
+            String repeat = scan.next();
+
+            System.out.println();
+            if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
+                System.out.println("Numbers you input " + arrayList);
+                System.out.println("Sum and average of input array numbers is " + sum);
+                System.out.println("----- Program Terminated -----");
+                break;
+            }
+
+        }
+    }
+}

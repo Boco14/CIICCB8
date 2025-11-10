@@ -51,8 +51,10 @@ public class ScoreToGrade {
 
             System.out.println();
 
-            if(repeat.equalsIgnoreCase("y"))continue;
-            else { break; }
+            if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
+                System.out.println("----- Program Terminated -----");
+                break;
+            }
 
         }
         scan.close();
