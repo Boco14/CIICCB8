@@ -27,7 +27,11 @@ public class InputArrrayNumbers {
 
             System.out.println();
             if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
-                System.out.println("Numbers you input " + arrayList);
+                System.out.print("Numbers you input ");
+                for(int y : arrayList)
+                    System.out.print(y + ", ");
+
+                System.out.println();
                 System.out.println("Sum and average of input array numbers is " + sum);
                 System.out.println("----- Program Terminated -----");
                 break;

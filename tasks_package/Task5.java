@@ -18,14 +18,15 @@ public class Task5 {
         Scanner scan = new Scanner(System.in);
 
         // Resizable-array implementation
-        for (int x = 0; x < 3; x++ ){
-            System.out.print("index of " + x + ": ");
+        for (int x = 1; x <= 3; x++ ){
+            System.out.print("Input " + x + ": ");
             int input = scan.nextInt();
 
             arrayList.add(input);
         }
 
         // print each user input
+        System.out.print("User input: ");
         for (int y : arrayList){
             System.out.print(y + ", ");
         }
@@ -36,13 +37,23 @@ public class Task5 {
         if (arrayList.get(0).equals(arrayList.get(1)) &&
                 arrayList.get(1).equals(arrayList.get(2))) {
             System.out.println("All numbers are equal");
+            print();
         }else{
-            if(arrayList.get(0) > arrayList.get(1) && arrayList.get(0) > arrayList.get(2))// checks if 0 > 1 and if 0 > 2
+            if(arrayList.get(0) > arrayList.get(1) && arrayList.get(0) > arrayList.get(2)) {// checks if 0 > 1 and if 0 > 2
                 System.out.println(arrayList.get(0) + " is the largest number");// says that o is the greater
-            else if(arrayList.get(1) > arrayList.get(0) && arrayList.get(1) > arrayList.get(2))// checks if 1 > 0 and if 1 > 2
+                print();
+            }
+            else if(arrayList.get(1) > arrayList.get(0) && arrayList.get(1) > arrayList.get(2)) {// checks if 1 > 0 and if 1 > 2
                 System.out.println(arrayList.get(1) + " is the largest number");// says that 1 is the greater
-            else
+                print();
+            }else {
                 System.out.println(arrayList.get(2) + " is the largest number"); // says that 2 is the largest number
+                print();
+            }
         }
+    }
+
+    public static void print(){
+        System.out.println("----- Program Terminated -----");
     }
 }

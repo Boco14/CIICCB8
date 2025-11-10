@@ -81,5 +81,19 @@ public class StringLesson {
         System.out.println("abc".startsWith("A")); // false
         System.out.println("abc".endsWith("c")); // true
         System.out.println("abc".endsWith("C")); // false
+
+        // contains() looks matches anywhere in a string
+        System.out.println("abc".contains("b")); //true
+        System.out.println("abc".contains("B")); //false
+
+        // replace() does a simple search and replace on the string
+        System.out.println("abcabc".replace('a', 'A')); // AbcAbc
+        System.out.println("abcabc".replace("a", "A")); // AbcAbc
+
+        // trim() removes white space trims the string before & after
+        System.out.println("abc".trim()); // abc
+        System.out.println("\t    a b c \n".trim()); // a b c
+
+
     }
 }
