@@ -12,6 +12,7 @@
 
 package programming_challenge;
 import java.util.Scanner;
+import output.ProgramTerminated;
 
 class Grade{
     int inputGrade;
@@ -52,7 +53,7 @@ public class ScoreToGrade {
             System.out.println();
 
             if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
-                System.out.println("----- Program Terminated -----");
+                ProgramTerminated.print();
                 break;
             }
 

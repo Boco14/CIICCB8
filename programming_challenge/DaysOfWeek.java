@@ -16,6 +16,8 @@
  */
 
 package programming_challenge;
+import output.ProgramTerminated;
+
 import java.util.Scanner;
 
 class WeekDays {
@@ -56,6 +58,8 @@ public class DaysOfWeek {
 
         WeekDays weekDay = new WeekDays(numberDay);
         weekDay.displayDay();
+
+        ProgramTerminated.print();
 
         scan.close();
     }

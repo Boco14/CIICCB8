@@ -6,6 +6,7 @@
 package programming_challenge;
 import java.util.ArrayList;
 import java.util.Scanner;
+import output.ProgramTerminated;
 
 public class SumOfInteger {
     public static void main(String[] args) {
@@ -32,12 +33,17 @@ public class SumOfInteger {
                 System.out.println();
 
                 if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
-                    System.out.println("Input: " + arrayList);
+                    System.out.println("Input: ");
+                    for(int y : arrayList){
+                        System.out.print(y + ", ");
+                    }
+                    System.out.println();
+
                     System.out.println("Sum of All integer Inputs is " + sum);
-                    System.out.println("----- Program Terminated -----");
+                    ProgramTerminated.print();
                     break;
                 }
         }
-                scan.close();
+        scan.close();
     }
 }

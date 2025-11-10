@@ -8,6 +8,7 @@
  * */
 
 package tasks_package;
+import output.ProgramTerminated;
 
 class DataTypes{
     char _h, _w, _r, _d;
@@ -64,5 +65,6 @@ public class Task2 {
     public static void main(String[] args) {
         DataTypes dataTypes = new DataTypes('H', 3110, 'w', (byte) 0, 'r', (short) 1, 'd', 2.0f, true);
         dataTypes.concatinate();
+        ProgramTerminated.print();
     }
 }

@@ -5,6 +5,8 @@
  */
 
 package programming_challenge;
+import output.ProgramTerminated;
+
 import java.util.Scanner;
 
 class NumberClassifier{
@@ -67,9 +69,10 @@ public class OddOrEven {
             System.out.print("Enter another number(y/n)?: ");
             String repeat = scan.next();
 
-
-            if (repeat.equalsIgnoreCase("y"))continue;
-            else break;
+            if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
+                ProgramTerminated.print();
+                break;
+            }
         }
         scan.close();
     }

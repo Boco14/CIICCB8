@@ -1,4 +1,5 @@
 package programming_challenge;
+import output.ProgramTerminated;
 
 public class StringMethods {
     public static void main(String[] args) {
@@ -21,5 +22,7 @@ public class StringMethods {
 
 //        6. Print the substring starting from the second character to the fifth character of the string
         System.out.println("Substring of second and fifth character are: " + name.substring(1, 4) + "\n");
+
+        ProgramTerminated.print();
     }
 }

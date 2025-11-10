@@ -11,6 +11,7 @@ package tasks_package;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import output.ProgramTerminated;
 
 public class Task5 {
     public static void main(String[] args) {
@@ -34,26 +35,21 @@ public class Task5 {
         System.out.println();
 
         // checks if all numbers are equal
-        if (arrayList.get(0).equals(arrayList.get(1)) &&
-                arrayList.get(1).equals(arrayList.get(2))) {
+        if (arrayList.get(0).equals(arrayList.get(1)) && arrayList.get(1).equals(arrayList.get(2))) {
             System.out.println("All numbers are equal");
-            print();
+            ProgramTerminated.print();
         }else{
             if(arrayList.get(0) > arrayList.get(1) && arrayList.get(0) > arrayList.get(2)) {// checks if 0 > 1 and if 0 > 2
                 System.out.println(arrayList.get(0) + " is the largest number");// says that o is the greater
-                print();
+                ProgramTerminated.print();
             }
             else if(arrayList.get(1) > arrayList.get(0) && arrayList.get(1) > arrayList.get(2)) {// checks if 1 > 0 and if 1 > 2
                 System.out.println(arrayList.get(1) + " is the largest number");// says that 1 is the greater
-                print();
+                ProgramTerminated.print();
             }else {
                 System.out.println(arrayList.get(2) + " is the largest number"); // says that 2 is the largest number
-                print();
+                ProgramTerminated.print();
             }
         }
-    }
-
-    public static void print(){
-        System.out.println("----- Program Terminated -----");
     }
 }

@@ -12,11 +12,14 @@
  */
 
 package programming_challenge.number_days;
+import output.ProgramTerminated;
 
 public class Main{
     public static void main(String[] args) {
 
         NumberDays repeat = new NumberDays();
         repeat.enterMonth();
+
+        ProgramTerminated.print();
     }
 }

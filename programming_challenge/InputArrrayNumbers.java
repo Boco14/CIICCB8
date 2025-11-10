@@ -5,6 +5,8 @@
  * */
 
 package programming_challenge;
+import output.ProgramTerminated;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -33,7 +35,7 @@ public class InputArrrayNumbers {
 
                 System.out.println();
                 System.out.println("Sum and average of input array numbers is " + sum);
-                System.out.println("----- Program Terminated -----");
+                ProgramTerminated.print();
                 break;
             }
 

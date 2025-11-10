@@ -6,6 +6,7 @@
  * */
 
 package tasks_package;
+import output.ProgramTerminated;
 
 public class Task3{
     public static void main(String[] args) {
@@ -20,6 +21,7 @@ public class Task3{
         
         if(b1 && b2 && b3){
             System.out.println("Success!");
+            ProgramTerminated.print();
         }
     }
 }
