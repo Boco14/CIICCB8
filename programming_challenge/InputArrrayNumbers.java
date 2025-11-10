@@ -24,6 +24,7 @@ public class InputArrrayNumbers {
             for(int x : arrayList){
                 sum += x;
             }
+            double average = sum / (double)arrayList.size();
             System.out.print("Add more number(y/n)? ");
             String repeat = scan.next();
 
@@ -34,7 +35,7 @@ public class InputArrrayNumbers {
                     System.out.print(y + ", ");
 
                 System.out.println();
-                System.out.println("Sum and average of input array numbers is " + sum);
+                System.out.printf("Sum is " + sum +", \nWhile the average of input array numbers is %.2f", average);
                 ProgramTerminated.print();
                 break;
             }
