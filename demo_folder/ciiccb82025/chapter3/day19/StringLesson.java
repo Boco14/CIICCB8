@@ -1,4 +1,4 @@
-package demo_folder.ciiccb82025.chapter3;
+package demo_folder.ciiccb82025.chapter3.day19;
 
 public class StringLesson {
     public static void main(String[] args) {

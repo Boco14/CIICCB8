@@ -1,7 +1,7 @@
 package my_activities.multi_arrays;
 
 public class TwoDimension {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // 1D array
         int[] oneD = {10, 20, 30};
         System.out.println("1D Array:");
