@@ -107,7 +107,6 @@ public class quiz {
         long x = 10;
         int y = (int)(2 * x);
         System.out.println(y);
-        */
 
         int m = 9, n = 1, x = 0;
         while(m > n) {
@@ -115,8 +114,12 @@ public class quiz {
             n += 2;
             x += m + n;
         }
-        System.out.println(x);
 
+        System.out.println(x);
+        StringBuilder sb = new StringBuilder();
+        sb.append("aaa").insert(1, "bb").insert(4, "ccc");
+        System.out.println(sb);
+        */
 
     }
 }
