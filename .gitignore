@@ -1,3 +1,10 @@
-# files
+# .java files
 quiz.java
 quiz2.java
+
+# .class files
+out
+
+# package
+demo_folder
+my_activities
