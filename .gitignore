@@ -8,3 +8,9 @@ out
 # package
 demo_folder
 my_activities
+
+# gitIgnore
+.gitignore
+
+# iml
+CIICCB8.iml
