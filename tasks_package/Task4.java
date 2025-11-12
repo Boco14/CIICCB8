@@ -10,10 +10,8 @@ public class Task4 {
         String input = scan.next();
 
         StringBuilder sb = new StringBuilder(input);
-        String string = String.valueOf(sb.reverse());
-//       String string = sb.reverse().toString();
 
-        System.out.println((input.equals(string)) ? "The input string is a palindrome." : "The input string is not a palindrome.");
+        System.out.println((input.equals(String.valueOf(sb.reverse()))) ? "The input string is a palindrome." : "The input string is not a palindrome.");
         ProgramTerminated.print();
     }
 }
