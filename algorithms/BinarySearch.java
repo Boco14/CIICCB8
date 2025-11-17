@@ -10,16 +10,28 @@ public class BinarySearch {
         Arrays.sort(arrayL);
         System.out.println(Arrays.toString(arrayL));
 
-        System.out.print("Find number: ");
+        System.out.print("Find index of number: ");
         int find = scan.nextInt();
-        int start=arrayL[0],mid=0,end=0,
+        FindNumber findNumber = new FindNumber(find);
+        int start=0,mid=0,end=0,
             length = arrayL.length;
-        inputInfo(arrayL, start, length, mid, end);
+        inputInfo(new int[]{arrayL[0]}, start, length, mid, end);
+        findNumber.displayIndex();
     }
     static void inputInfo(int[] arrayL, int start, int length, int mid, int end){
-        System.out.println("length is " + length + " and divisible by 2");
         mid = length / 2;
         end = length;
-        System.out.println("Start " + arrayL[start-1] + "\nMiddle " + mid + "\nEnd " + end);
+        System.out.println("Start " + arrayL[start] + ", Middle " + mid + ", End " + end);
     }
 }
+ class FindNumber{
+    int input;
+    public FindNumber(int i){
+        this.input = i;
+    }
+    void displayIndex(){
+        System.out.println();
+
+        System.out.println("--- Output here -> " + input);
+    }
+ }
