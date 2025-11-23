@@ -6,20 +6,28 @@
 
 package programming_challenge;
 import output.ProgramTerminated;
-
-import java.util.Scanner;
-import java.util.ArrayList;
+import java.util.*;
 
 public class InputArrrayNumbers {
+    static Scanner scan = new Scanner(System.in);
+    static ArrayList<Integer> arrayList = new ArrayList<>();
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        ArrayList<Integer> arrayList = new ArrayList<>();
+        inputArray();
+    }
 
-        while(true){
+    static int inputValidator(){
+        try{
             System.out.print("Enter number: ");
             int input = scan.nextInt();
-            arrayList.add(input);
-
+            return input;
+        }catch (Exception e){
+            System.out.println("Something went wrong"+e);
+        }
+        return 0;
+    }
+    static void inputArray(){
+        while(true){
+            arrayList.add(inputValidator());
             int sum = 0;
             for(int x : arrayList){
                 sum += x;
@@ -39,7 +47,6 @@ public class InputArrrayNumbers {
                 ProgramTerminated.print();
                 break;
             }
-
         }
     }
 }

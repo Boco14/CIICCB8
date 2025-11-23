@@ -52,10 +52,14 @@ class WeekDays {
 public class DaysOfWeek {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-
-        System.out.print("Enter a number 1-7 to display day of week: ");
-        int numberDay = scan.nextInt();
-
+        int numberDay = 0;
+        try{
+            System.out.print("Enter a number 1-7 to display day of week: ");
+            numberDay = scan.nextInt();
+        }catch (Exception e){
+            System.out.println("Something went wrong");
+            ProgramTerminated.print();
+        }
         WeekDays weekDay = new WeekDays(numberDay);
         weekDay.displayDay();
 
