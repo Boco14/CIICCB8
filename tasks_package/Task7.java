@@ -4,6 +4,12 @@ import java.util.Scanner;
 public class Task7 {
     public static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
+        Shapes shapes = new Shapes();
+        Shapes.displayObjects();
+    }
+}
+class Shapes{
+    public static void displayObjects(){
         Input input = new Input();
         input.acceptInput();
         Add add = new Add(input.getInput1(), input.getInput2());
@@ -99,30 +105,17 @@ class Div extends Task7 implements Operation{
     }
     @Override
     public void text(){
-        if(input1 == 0 || input2 == 0){
             try{
                 int total = input1 / input2;
                 System.out.println("Div operation: " + input1 + " / " + input2 + " = " + (double)total);
             }catch (ArithmeticException e){
                 System.out.println("Div operation: has stopped");
             }
-        }else{
-            int total = input1 / input2;
-            System.out.println("Div operation: " + input1 + " / " + input2 + " = " + (double)total);
-        }
     }
     @Override
     public int mathOperation(){
-        int i = 0;
-        try{
-            i =input1 / input2;
-            return i;
-        }catch (ArithmeticException e){
-//            System.out.println("Error details: " + e);
-            System.out.println("Error: Zero (0) is not divisible.");
-            return 0;
-        }
-
+        if(input1 == 0 || input2 == 0)return 0;
+        return 0;
     }
 }
 
