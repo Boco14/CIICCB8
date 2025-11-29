@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Task7 {
     public static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
-        Shapes shapes = new Shapes();
         Shapes.displayObjects();
     }
 }
