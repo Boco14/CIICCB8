@@ -1,4 +1,3 @@
-package tasks_package;
 /**
  * Task 7
  * Create a program where user inputs two numbers and perform 4 basic
@@ -6,7 +5,7 @@ package tasks_package;
  *
  * @author Leo
  * */
-
+package tasks_package;
 import java.util.Scanner;
 
 public class Task7 {

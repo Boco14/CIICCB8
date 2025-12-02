@@ -14,9 +14,8 @@ public class NumberOfWords {
         StringBuilder sb = new StringBuilder(sentence);
         ArrayList<String> listWords = new ArrayList<>();
 
-        int space = 0,
-                start = 0,
-                end = 0;
+        int start = 0,
+            end = 0;
 
         for(int x = 1; x <= sb.length(); x++){
             if(sb.charAt(x-1) == ' '){

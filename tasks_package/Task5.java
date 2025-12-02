@@ -6,9 +6,7 @@
  *
  * @author Leo
  * */
-
 package tasks_package;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import output.ProgramTerminated;

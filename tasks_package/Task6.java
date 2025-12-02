@@ -1,4 +1,3 @@
-package tasks_package;
 /**
  * Task 6
  * Loop through and print out all even numbers, e
@@ -7,6 +6,7 @@ package tasks_package;
  *
  * @author Leo
  * */
+package tasks_package;
 public class Task6 {
     public static void main(String[] args) {
         int[] numbers = {
