@@ -4,15 +4,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Task4 {
-    static Scanner scan = new Scanner(System.in);
-    static String input;
+    private static Scanner scan = new Scanner(System.in);
+    private static String input;
 
     static void main() {
         System.out.print("Input string: ");
         String input = scan.next();
 
         withStringBuilder(input);
-//        palindromeNoStringBuilder(input);
         ProgramTerminated.print();
     }
 

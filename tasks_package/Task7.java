@@ -1,4 +1,12 @@
 package tasks_package;
+/**
+ * Task 7
+ * Create a program where user inputs two numbers and perform 4 basic
+ * arithmetic operations using 4 methods with return types and print the results.
+ *
+ * @author Leo
+ * */
+
 import java.util.Scanner;
 
 public class Task7 {
