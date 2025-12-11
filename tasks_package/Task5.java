@@ -9,6 +9,8 @@
 package tasks_package;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.stream.IntStream;
+
 import output.ProgramTerminated;
 
 public class Task5 {
@@ -17,23 +19,39 @@ public class Task5 {
         Scanner scan = new Scanner(System.in);
 
         // Resizable-array implementation
-        for (int x = 1; x <= 3; x++ ){
+        IntStream.rangeClosed(1, 3)
+                .forEach(x -> {
+                    System.out.print("Input " + x + ": ");
+                    int input = scan.nextInt();
+                    arrayList.add(input);
+                });
+        /*for (int x = 1; x <= 3; x++ ){
             System.out.print("Input " + x + ": ");
             int input = scan.nextInt();
 
             arrayList.add(input);
-        }
+        }*/
 
-        // print each user input
-        System.out.print("User input: ");
-        for (int y : arrayList){
-            System.out.print(y + ", ");
-        }
-
+        arrayList.stream().forEach(a -> System.out.print(a + ", "));
         System.out.println();
 
         // checks if all numbers are equal
-        if (arrayList.get(0).equals(arrayList.get(1)) && arrayList.get(1).equals(arrayList.get(2))) {
+        boolean allEqual = arrayList.stream().distinct().count() == 1;
+
+        if (allEqual) {
+            System.out.println("All numbers are equal");
+            ProgramTerminated.print();
+        } else {
+            // Find the largest number using streams
+            int max = arrayList.stream()
+                    .max(Integer::compareTo)
+                    .get();
+
+            System.out.println(max + " is the largest number");
+            ProgramTerminated.print();
+        }
+
+        /*if (arrayList.get(0).equals(arrayList.get(1)) && arrayList.get(1).equals(arrayList.get(2))) {
             System.out.println("All numbers are equal");
             ProgramTerminated.print();
         }else{
@@ -48,6 +66,6 @@ public class Task5 {
                 System.out.println(arrayList.get(2) + " is the largest number"); // says that 2 is the largest number
                 ProgramTerminated.print();
             }
-        }
+        }*/
     }
 }
