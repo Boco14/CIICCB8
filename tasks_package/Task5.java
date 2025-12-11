@@ -27,14 +27,6 @@ public class Task5 {
                     arrayList.add(input);
                 });
 
-        /* Without stream
-        for (int x = 1; x <= 3; x++ ){
-            System.out.print("Input " + x + ": ");
-            int input = scan.nextInt();
-
-            arrayList.add(input);
-        }*/
-
         arrayList.stream().forEach(a -> System.out.print(a + ", "));
         System.out.println();
 
@@ -53,23 +45,5 @@ public class Task5 {
             System.out.println(max + " is the largest number");
             ProgramTerminated.print();
         }
-
-        /* Without using stream
-        if (arrayList.get(0).equals(arrayList.get(1)) && arrayList.get(1).equals(arrayList.get(2))) {
-            System.out.println("All numbers are equal");
-            ProgramTerminated.print();
-        }else{
-            if(arrayList.get(0) > arrayList.get(1) && arrayList.get(0) > arrayList.get(2)) {// checks if 0 > 1 and if 0 > 2
-                System.out.println(arrayList.get(0) + " is the largest number");// says that o is the greater
-                ProgramTerminated.print();
-            }
-            else if(arrayList.get(1) > arrayList.get(0) && arrayList.get(1) > arrayList.get(2)) {// checks if 1 > 0 and if 1 > 2
-                System.out.println(arrayList.get(1) + " is the largest number");// says that 1 is the greater
-                ProgramTerminated.print();
-            }else {
-                System.out.println(arrayList.get(2) + " is the largest number"); // says that 2 is the largest number
-                ProgramTerminated.print();
-            }
-        }*/
     }
 }
