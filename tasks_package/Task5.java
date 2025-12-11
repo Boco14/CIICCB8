@@ -27,7 +27,7 @@ public class Task5 {
                     arrayList.add(input);
                 });
 
-        arrayList.stream().forEach(a -> System.out.print(a + ", "));
+        arrayList.forEach(a -> System.out.print(a + ", "));
         System.out.println();
 
         // checks if all numbers are equal
