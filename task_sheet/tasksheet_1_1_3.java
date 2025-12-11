@@ -9,18 +9,24 @@
  *
  * @author leo
  * */
-
 package task_sheet;
 import output.ProgramTerminated;
+import java.util.Scanner;
 
 public class tasksheet_1_1_3 {
+    private static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
-        int check_number = 10;
-        String message;
-
-        for(int i = 1; i <= check_number; i++){
-            System.out.println((i % 2 == 0) ? i + " is even number" : i + " is odd number");
-        }
+        CheckNumber check = x -> {
+            System.out.println((x % 2 == 0) ? x + " is even number" : x + " is odd number");
+            return x;
+        };
+        System.out.print("Enter a number: ");
+        int input = scan.nextInt();
+        check.check_number(input);
         ProgramTerminated.print();
     }
 }
+interface CheckNumber {
+    int check_number(int num);
+}
+
