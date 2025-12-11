@@ -15,6 +15,7 @@ import output.ProgramTerminated;
 
 public class Task5 {
     public static void main(String[] args) {
+        System.out.println("TASK 5");
         ArrayList<Integer> arrayList = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
 
@@ -25,6 +26,7 @@ public class Task5 {
                     int input = scan.nextInt();
                     arrayList.add(input);
                 });
+
         /* Without stream
         for (int x = 1; x <= 3; x++ ){
             System.out.print("Input " + x + ": ");
