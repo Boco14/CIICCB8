@@ -17,15 +17,14 @@ public class Task8 {
     private static final Scanner SCAN = new Scanner(System.in);
     private static final ArrayList<Integer> LIST = new ArrayList<>();
     public static void main(String[] args) {
+        System.out.println("TASK 8");
         addInput();
 
         int total = cumulativeSum(toIntArray(LIST));
         System.out.println("\nTotal sum of all parameters: " + total);
 
         System.out.println("Cumulative sums:");
-        for (int n : LIST) {
-            System.out.println(n + " = " + cumulativeSumUpTo(n));
-        }
+        LIST.stream().forEach(n -> System.out.println(n + " = " + cumulativeSumUpTo(n)));
     }
     static void addInput(){
         while(true){
