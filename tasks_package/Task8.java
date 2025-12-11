@@ -38,8 +38,8 @@ public class Task8 {
             if(!repeat.equalsIgnoreCase("y"))break;
         }
         System.out.print("Your input: ");
-        for(int x:LIST)
-            System.out.print(x);
+
+        LIST.stream().forEach(l -> System.out.print(l + ", "));
     }
 
     public static int cumulativeSum(int... s){

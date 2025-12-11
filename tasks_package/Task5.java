@@ -25,7 +25,8 @@ public class Task5 {
                     int input = scan.nextInt();
                     arrayList.add(input);
                 });
-        /*for (int x = 1; x <= 3; x++ ){
+        /* Without stream
+        for (int x = 1; x <= 3; x++ ){
             System.out.print("Input " + x + ": ");
             int input = scan.nextInt();
 
@@ -51,7 +52,8 @@ public class Task5 {
             ProgramTerminated.print();
         }
 
-        /*if (arrayList.get(0).equals(arrayList.get(1)) && arrayList.get(1).equals(arrayList.get(2))) {
+        /* Without using stream
+        if (arrayList.get(0).equals(arrayList.get(1)) && arrayList.get(1).equals(arrayList.get(2))) {
             System.out.println("All numbers are equal");
             ProgramTerminated.print();
         }else{
