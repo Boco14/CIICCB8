@@ -24,6 +24,6 @@ public class Task6 {
     };
         Arrays.stream(numbers)
                 .takeWhile(n -> n!=237)
-                .forEach(System.out::println);
+                .forEach(n -> System.out.print(n + " "));
     }
 }
