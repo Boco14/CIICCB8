@@ -9,12 +9,8 @@ import java.util.Scanner;
 import output.ProgramTerminated;
 
 class VowelConsonantsClass{
-    String input;
-
-    VowelConsonantsClass(String i){
-        this.input = i;
-    }
-
+    private static String input;
+    VowelConsonantsClass(String i){input = i;}
     public void determineVowelConsonant(){
         if(input.equalsIgnoreCase("a") ||
                 input.equalsIgnoreCase("e") ||
@@ -22,33 +18,29 @@ class VowelConsonantsClass{
                 input.equalsIgnoreCase("o") ||
                 input.equalsIgnoreCase("u"))
             System.out.println("Your input is a VOWEL");
-        else
-            System.out.println("Your input is a CONSONANT");;
+        else System.out.println("Your input is a CONSONANT");
     }
-
 }
 
 public class VowelConsonants {
+    private static final Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String input, repeat;
-
         while(true){
-            System.out.print("Vowels or Consonants? ");
-            input = scan.next();
+            System.out.print("Vowels or Consonants?: ");
+            String input = scan.next();
 
             VowelConsonantsClass vowelConsonantsClass = new VowelConsonantsClass(input);
             vowelConsonantsClass.determineVowelConsonant();
 
-            System.out.print("Enter another (y/n)? ");
-            repeat = scan.next();
+            System.out.print("Enter another (y/n)?: ");
+            String repeat = scan.next();
             System.out.println();
 
-            if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
+            if(!repeat.equalsIgnoreCase("y")){
                 ProgramTerminated.print();
                 break;
             }
         }
-            scan.close();
+        scan.close();
     }
 }
