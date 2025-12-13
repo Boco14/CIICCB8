@@ -38,10 +38,7 @@ public class Task5 {
             ProgramTerminated.print();
         } else {
             // Find the largest number using streams
-            int max = arrayList.stream()
-                    .max(Integer::compareTo)
-                    .get();
-
+            int max = arrayList.stream().max(Integer::compareTo).get();
             System.out.println(max + " is the largest number");
             ProgramTerminated.print();
         }
