@@ -19,7 +19,7 @@ public class OddOrEven {
                 if(input < 0) System.out.println("User input is negative");
                 else System.out.println("User input is positive");
         }
-        scan.close();
         ProgramTerminated.print();
+        scan.close();
     }
 }
