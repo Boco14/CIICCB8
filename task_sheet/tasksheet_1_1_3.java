@@ -1,6 +1,5 @@
 /**
  * Writing Control flow statements using Loops
- *
  * Performance Objective: Given a function of  (i%2==0) ? 'even' : 'odd'; ,
  * you should be able to write a program that will check each number
  * if the given numbers are odd or even numbers, print them,
