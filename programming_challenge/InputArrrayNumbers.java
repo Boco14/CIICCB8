@@ -16,11 +16,11 @@ public class InputArrrayNumbers {
     public static void main(String[] args) {
         inputArray();
     }
+
     static int inputValidator(){
         try{
             System.out.print("Enter number: ");
-            int input = scan.nextInt();
-            return input;
+            return scan.nextInt();
         }catch (Exception e){
             System.out.println("Something went wrong"+e);
             return 0;

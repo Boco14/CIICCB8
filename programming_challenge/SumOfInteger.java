@@ -9,35 +9,31 @@ import java.util.Scanner;
 import output.ProgramTerminated;
 
 public class SumOfInteger {
+    private static Scanner scan = new Scanner(System.in);
+    private static ArrayList<Integer> arrayList= new ArrayList<>();
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        ArrayList<Integer> arrayList= new ArrayList<>();
-
-        // Create an infinite loop
-        for ( ; ; ){
-            System.out.print("Number: " );
-            int input = scan.nextInt();
-            arrayList.add(input);
-
-            // Initialize the variable sum
-            int sum = 0;
-            // Add the value of sum to every iteration
-            for(int x : arrayList){
-                // sum = sum + x(element)
-                sum += x;
+        while(true){
+            try{
+                System.out.print("Number: " );
+                int input = scan.nextInt();
+                arrayList.add(input);
+            }catch (Exception InputMismatchException){
+                System.out.println("--- Only accepting numbers!!! ---");
+                System.out.println();
             }
-            // Repeat action
+
+            // get the total
+            int sum = arrayList.stream().mapToInt(Integer::intValue).sum();
                 System.out.print("Add another number (y/n)?: ");
                 String repeat = scan.next();
-
                 System.out.println();
 
                 if(!repeat.equalsIgnoreCase("y")){
-                    System.out.println("Input: ");
+                    System.out.print("Input: ");
                     arrayList.forEach(i-> System.out.print(i + " "));
                     System.out.println();
 
-                    System.out.println("Sum of All integer Inputs is " + sum);
+                    System.out.println("Sum of All integer Inputs is: " + sum);
                     ProgramTerminated.print();
                     break;
                 }
