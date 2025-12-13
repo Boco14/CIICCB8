@@ -29,10 +29,11 @@ public class InputArrrayNumbers {
     static void inputArray(){
         while(true){
             arrayList.add(inputValidator());
-            AtomicInteger sum = new AtomicInteger();
-            arrayList.stream().forEach(n-> sum.addAndGet(n));
+            // get the sum of each element inside arrayList
+            int sum = arrayList.stream().mapToInt(Integer::intValue).sum();
+            // get the average of arrayList
+            double average = arrayList.stream().mapToInt(Integer::intValue).average().orElse(0.0);
 
-            double average = sum.get() / (double)arrayList.size();
             System.out.print("Add more number(y/n)? ");
             String repeat = scan.next();
 
