@@ -7,6 +7,8 @@
 package programming_challenge;
 import output.ProgramTerminated;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 public class InputArrrayNumbers {
     static Scanner scan = new Scanner(System.in);
@@ -14,7 +16,6 @@ public class InputArrrayNumbers {
     public static void main(String[] args) {
         inputArray();
     }
-
     static int inputValidator(){
         try{
             System.out.print("Enter number: ");
@@ -22,26 +23,23 @@ public class InputArrrayNumbers {
             return input;
         }catch (Exception e){
             System.out.println("Something went wrong"+e);
+            return 0;
         }
-        return 0;
     }
     static void inputArray(){
         while(true){
             arrayList.add(inputValidator());
-            int sum = 0;
-            for(int x : arrayList){
-                sum += x;
-            }
-            double average = sum / (double)arrayList.size();
+            AtomicInteger sum = new AtomicInteger();
+            arrayList.stream().forEach(n-> sum.addAndGet(n));
+
+            double average = sum.get() / (double)arrayList.size();
             System.out.print("Add more number(y/n)? ");
             String repeat = scan.next();
 
             System.out.println();
-            if(repeat.equalsIgnoreCase("n") || !repeat.equalsIgnoreCase("y")){
+            if(!repeat.equalsIgnoreCase("y")){
                 System.out.print("Numbers you input ");
-                for(int y : arrayList)
-                    System.out.print(y + ", ");
-
+                arrayList.stream().forEach(n-> System.out.print(n+" "));
                 System.out.println();
                 System.out.printf("Sum is " + sum +", \nWhile the average of input array numbers is %.2f", average);
                 ProgramTerminated.print();
