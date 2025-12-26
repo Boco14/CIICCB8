@@ -7,11 +7,7 @@
  * @author Leo
  * */
 package tasks_package;
-
 import java.util.Arrays;
-import java.util.stream.Collectors;
-
-import static java.util.stream.Collectors.*;
 
 public class Task6 {
     public static void main(String[] args) {
