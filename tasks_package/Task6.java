@@ -9,7 +9,9 @@
 package tasks_package;
 
 import java.util.Arrays;
-import java.util.List;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.*;
 
 public class Task6 {
     public static void main(String[] args) {
@@ -22,8 +24,6 @@ public class Task6 {
                 815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
                 958, 609, 842, 451, 688, 753, 854, 685, 93, 857, 440, 380, 126, 721, 328, 753, 470, 743, 527
     };
-        Arrays.stream(numbers)
-                .takeWhile(n -> n!=237)
-                .forEach(n -> System.out.print(n + " "));
+        Arrays.stream(numbers).takeWhile(n -> n!=237).forEach(n -> System.out.print(n + " "));
     }
 }
